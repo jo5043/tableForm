@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		body { width: 810px; margin: 0 auto; }
+		table { border-collapse: collapse; }
+		caption { font-size: 30px; }
+		th, td { border: 2px solid black; font-size: 20px;}		
+		th { width: 200px; height: 30px; }
+		td { height: 50px;}
+	</style>
+
+</head>
+<body>
+    <h1>객실소개</h1>
+    <p>도미토리</p>
+    <table>
+        <caption>요안도라 객실</caption>
+        <thead>
+            <tr>
+                <th>방이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>유채방</th>
+                <td>여성 도미토리</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="4">1인 20,000</td>
+            </tr>
+            <tr>
+                <th rowspan="2">동백방</th>
+                <td>동성도미토리</td>
+            </tr>
+            <tr>
+                <td>가족1팀</td>
+            </tr>
+            <tr>
+                <th>천혜향방</th>
+                <td>-</td>
+                <td>2인실</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">바깥채 전체를 렌트합니다</td>
+
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+    <h1>여름 방학 특강 신청</h1>
+    <form action="">
+        <fieldset>
+            <legend>수강과목</legend>
+            <label>영어회화(초급)</label>
+            <input type="text" value="오전 9:00 ~ 11:00" disabled>
+        </fieldset>
+        <fieldset>
+            <legend>신청자</legend>
+            <label for="username">이름</label>
+            <input type="text" id="username" required autofocus><br>
+            <label for="" >학번</label>
+            <input type="text" name="text" placeholder="7자리입력"><br>
+            <label for="">학과</label>
+            <select name="" id="">
+                <optgroup>
+                    <option value="컴공">컴퓨터공학</option>
+                    <option value="디자인">통계학</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="">연락처</label>
+            <select name="" id="" size="1">
+                <optgroup>
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                </optgroup>
+                
+            </select>
+            <span>-</span>
+            <input type="text">
+            <span>-</span>
+            <input type="text">
+        </fieldset>
+        <fieldset>
+            <legend>교재 주문</legend>
+            <label for="">교재</label>
+            <input type="range" name="sheet" min="0" max="100">
+            <br>
+            <label for="">워드시트</label>
+            <input value="0" type="number" name="sheet" min="1" max="100">
+            <br>
+            <label for="">단체주문</label>
+            <input value="0" type="number" name="sheet" min="0" max="100">
+            <br>
+            <label for="">관심분야-문법, 어휘, 회화, 리스닝</label>
+        <select name="" id="">
+            
+            <optgroup>
+                <option></option>
+            </optgroup>
+        </select>
+        </fieldset>
+        <fieldset>
+            <legend>신청과 재입력</legend>
+            <input type="button" value="submit">
+            <button type="reset">reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
